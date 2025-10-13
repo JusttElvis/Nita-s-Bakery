@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Nita's Bakery • About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <div class="brand">Nita’s <span>Bakery</span></div>
+    <nav class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+     
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <div class="grid" style="grid-template-columns:1.1fr .9fr;gap:30px">
+    <div>
+      <div class="eyebrow">Our Story</div>
+      <h1>Small Batch • Big Heart</h1>
+      <p class="lead">Hi, I’m Nita — a passionate baker and content creator based in Awka, Anambra State, with a love for creating delicious treats. Welcome to my bakery!</p>
+      <p>Pre-orders are welcome. We bake fresh daily and sell out often, so go to the menu and pick your favorite treat! Delivery available within Awka City.</p>
+    
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/10370094/pexels-photo-10370094.jpeg" alt="Bakery display">
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">© <span data-year></span> Nita’s Bakery</div>
+</footer>
+
+<script type="module">
+  import {cart, mountYear} from "./js/app.js";
+  mountYear(); cart.renderBadge();
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Nita's Bakery • Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand">Nita’s <span>Bakery</span></div>
+      <nav class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container hero" id="main-main">
+    
+      
+      <div class="hero-body" id="boddy">
+        
+        <h1>NEED A SNACK?</h1>
+        <p class="lead">We are an Anambra-Based Bakery specializing in small-batch, artisanal baked goods.</p>
+        <div class="hero-actions">
+          <a class="btn" href="menu.html">View Menu</a>
+          <a class="btn alt" href="about.html">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <h2>Popular Pick</h2>
+      <div class="sub">Experience the amazing taste of our freshly baked meat pies!</div>
+      <div class="grid grid-4">
+        <article class="card">
+        </article>
+        <article class="card1">
+          <img src="https://media.istockphoto.com/id/1171946922/photo/feet.jpg?s=612x612&w=0&k=20&c=nO1YSimW5v4eBLGnJxqYSm3_zDk6wtRqc2bKf11eo3A=" alt="">
+          <div class="body"><div class="kicker">Meat Pies</div><h3>Classic Meat Pie</h3></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop">
+    <div class="modal"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">© <span data-year></span> Nita’s Bakery. All rights reserved.</div>
+  </footer>
+
+  <script type="module">
+    import {cart, mountYear} from "./js/app.js";
+    mountYear(); cart.renderBadge();
+  </script>
+</body>
+</html>
+
